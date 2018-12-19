@@ -1,12 +1,10 @@
 import React from 'react';
-import {Navbar, Nav, NavItem, NavDropdown,MenuItem} from 'react-bootstrap';
-
-class Header extends React.Component {
-    render() {
-        return (
-            <div className="app-header">
-            <Navbar inverse collapseOnSelect>
-                <Navbar.Header>
+import{Navbar,Nav,NavItem,NavDropdown,MenuItem} from 'react-bootstrap';
+class Header extends React.Component{
+    render(){
+        return(
+            <div className="app-header"><Navbar inverse collapseOnSelect>
+            <Navbar.Header>
                     <Navbar.Brand>
                     <a href="/">GUNI SHOP</a>
                     </Navbar.Brand>
@@ -26,10 +24,9 @@ class Header extends React.Component {
                         </NavItem>
                     </Nav>
                 </Navbar.Collapse>
-                </Navbar>
+            </Navbar>
             </div>
-        );
+        )
     }
 }
-
 export default Header;
